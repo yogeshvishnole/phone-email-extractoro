@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: white;
+  background-image: linear-gradient(to left bottom, #4b0082, #66023c),
+    url(../img/blue.svg);
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loader {
+  margin: 5rem auto;
+  text-align: center;
+}
+.loader svg {
+  height: 5.5rem;
+  width: 5.5rem;
+  fill: #f59a83;
+  transform-origin: 44% 50%;
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.showpiece-header {
+  max-width: 114rem;
+  height: 7rem;
+  /* background-color: purple; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.showpiece-header h3 {
+  padding-top: 2rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.url-taker {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 114rem;
+  height: 7rem;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#url {
+  padding: 0.5rem 1rem;
+  width: 40rem;
+}
+
+.btn {
+  background-color: purple;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 2rem;
+  display: block;
+  transform: translateX(52rem);
+  margin-top: 2rem;
+}
+
+.results {
+  margin-top: 14rem;
+  margin-left: 10rem;
+  color: white;
+}
+
+.col-md-6 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .showpiece-header {
+    max-width: 60rem;
+  }
+  .search {
+    overflow: hidden;
+    max-width: 60rem;
+    height: 20rem;
+  }
+  .url-taker {
+    max-width: 60rem;
+  }
+  .label {
+    padding: 0rem;
+    width: 50rem;
+  }
+  .btn {
+    transform: translateX(25rem);
+  }
+  .row {
+    margin: 0rem;
+    width: 60rem;
+  }
+  .col-md-6 {
+    width: 60rem;
+    margin: 0rem;
+    padding: 0rem;
+    margin-bottom: 2rem;
+  }
+}
